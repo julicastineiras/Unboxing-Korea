@@ -8,10 +8,10 @@ body {
     background-color: #f6f6f6;
 }
 header {
-    background-image: url("../assets/header.png");
+    background-image: url("../assets/seoul-namsan-night-wide.png");
     background-size: cover;    /* que cubra todo el ancho */
     background-position: center;
-    height: 611px;             /* altura de tu header */
+    height: 611px;             /* altura del header */
     color: white;
     padding: 20px;
     position: relative;
@@ -27,15 +27,14 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #002E86;
-    font-size: 80px;
+    color: #F60003;
+    font-size: 5rem;
     font-family: "Bangers", system-ui;
     font-weight: 400;
     font-style: normal;
     text-align: center;
     /*margin-top: 200px;*/
     text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-
 }
 
 main {
@@ -55,20 +54,8 @@ main {
     color: white;
     font-size: 18px;
 }
-.barraNav {
-    position:absolute;
-    left: 0;
-    right: 0;
-    bottom: 20px;
-}
-.barraNav ul{
-    display: flex;
-    justify-content: space-around;  /*separa a lo largo del header*/
-    list-style: none;         /*saca viñetas*/
 
-}
-.barraNav ul li a {
-    color: #002E86;
+.navbar-nav {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 250;
@@ -77,7 +64,35 @@ main {
     font-weight: bold;
     font-size: 28px;
     text-shadow: 2px 2px 4px rgba(63, 62, 62, 0.6);
-}  
+}
+.nav-item .nav-link {
+    color: #002E86;
+}
+/*.barraNav {
+    position:absolute;
+    display: flex;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-around;  /*separa a lo largo del header
+    list-style: none;
+
+}
+.barraNav ul li a {
+    color: #002E86;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+    text-decoration: none; /*saca el subrayado al hipervinculo
+    font-weight: bold;
+    font-size: 28px;
+    text-shadow: 2px 2px 4px rgba(63, 62, 62, 0.6);
+}  */
 
 .h2Index {
     color: #002E86;

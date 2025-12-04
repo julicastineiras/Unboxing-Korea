@@ -9,25 +9,36 @@
 </head>
 <body>
     <header>
-        <form action="/buscar" class="formBuscar">
-            <label for="buscaTexto">Buscar</label>
-            <input id="buscaTexto" type="search" placeholder="Ingrese texto" />
-            <button type="submit">Buscar</button>
-        </form>
+        <nav class="navbar bg-transparent">
+            <div class="container-fluid justify-content-end">
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
         <div class="boxH1">
             <h1>Unboxing Korea</h1>
         </div>
-        <div class="barraNav">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./destinos.html">Destinos</a></li>
-                    <li><a href="./que-comer.html">Qué comer</a></li>
-                    <li><a href="./consejos.html">Consejos</a></li>
-                    <li><a href="./sobre-mi.html">Sobre mi</a> </li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <ul class="navbar-nav d-flex justify-content-around w-100">
+                <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./destinos.html">Destinos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./que-comer.html">Qué comer</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./consejos.html">Consejos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./sobre-mi.html">Sobre mi</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <h2>Sobre Mi</h2>
@@ -46,14 +57,6 @@
             disfrutar al máximo de tu viaje a Corea del Sur.</p>
         </div>
         </section>
-    <div class="container">
-        <div class="cajas row">
-            <p class="col-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et convallis mauris. Etiam ac enim tempor magna sollicitudin elementum nec eu nunc. Sed sit amet condimentum urna. Nullam ut justo a elit molestie tincidunt eu non turpis. Donec egestas non mi at ornare. Proin velit justo, accumsan quis lorem quis, vehicula volutpat ex. Aenean sed tristique mi.</p>
-            <p class="col-3">Praesent euismod, nisl vel tincidunt lacinia, nunc urna facilisis libero, in convallis erat odio a libero. Curabitur euismod, nisl vel tincidunt lacinia, nunc urna facilisis libero, in convallis erat odio a libero. Curabitur euismod, nisl vel tincidunt lacinia, nunc urna facilisis libero, in convallis erat odio a libero.</p>
-            <p class="col-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed et convallis mauris. Etiam ac enim tempor magna sollicitudin elementum nec eu nunc. Sed sit amet condimentum urna. Nullam ut justo a elit molestie tincidunt eu non turpis. Donec egestas non mi at ornare. Proin velit justo, accumsan quis lorem quis, vehicula volutpat ex. Aenean sed tristique mi.</p>
-            <p class="col-3">Quisque euismod, nisl vel tincidunt lacinia, nunc urna facilisis libero, in convallis erat odio a libero. Curabitur euismod, nisl vel tincidunt lacinia, nunc urna facilisis libero, in convallis erat odio a libero. Curabitur euismod, nisl vel tincidunt lacinia, nunc urna facilisis libero, in convallis erat odio a libero.</p>
-        </div>
-    </div>
     </main>
     <footer>
         <h1>Unboxing Korea</h1>
