@@ -339,6 +339,8 @@ background-color: #f6f6f6;
     padding: 10px;
     margin-top: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    position: relative;
+    z-index: 1050; /* Asegura que el navbar esté por encima de otros elementos */
   }
 
 .col {
@@ -371,6 +373,8 @@ body {
     padding: 10px;
     margin-top: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    position: relative;
+    z-index: 1050; /* Asegura que el navbar esté por encima de otros elementos */
   }
 
 .col {
