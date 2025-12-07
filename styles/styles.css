@@ -242,7 +242,6 @@ article {
     justify-content: center;
 }
 
-/* Título con fondo */
 article h3 {
     padding: 8px;
     margin-bottom: 10px;
@@ -277,7 +276,6 @@ article p {
 
 }
 
-/* Cajitas de cada lugar */
 .itemsDestinos li {
     padding: 10px;
     text-align: left;
@@ -290,15 +288,23 @@ article p {
 
 /* COMIDA PAGE */
 
+.comidaIzq {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
 .descripcionComida {
   display: flex;
   gap: 20px;
+  justify-content: center;
   align-items: flex-start;
   max-width: 1500px;
 }
 
 .comidaDer{
-  flex-direction: row-reverse;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* CONSEJOS PAGE */
@@ -354,13 +360,35 @@ background-color: #f6f6f6;
     height: auto;
     width: 100%;
 }
+
+.sobreMi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 }
 @media (max-width: 430px) {
 body {
-background-color: #f6f6f6;
+    background-color: #f6f6f6;
 }
+
+#navbarNav {
+    background: #ffffff;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  }
+
 .imgDestinos {
     height: auto;
     width: 100%;
+}
+
+.sobreMi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 }
