@@ -327,10 +327,19 @@ article div ul li {
     font-style: normal;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 991px) {
 body {
 background-color: #f6f6f6;
 }
+
+#navbarNav {
+    background: #ffffff;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  }
 
 .col {
     padding-top: 10px;
