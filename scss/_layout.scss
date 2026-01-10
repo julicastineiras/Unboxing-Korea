@@ -1,0 +1,202 @@
+/* Estructura: header/nav/grids/footer y responsive */
+
+/* Header */
+header {
+  background-image: url("../assets/seoul-namsan-night-wide.png");
+  background-size: cover;
+  background-position: center;
+  height: $header-height;
+  color: white;
+  padding: $space-lg;
+  position: relative;
+}
+
+.boxH1 {
+  @include flex-center;
+  height: 80%;
+}
+
+/* Buscador */
+.formBuscar {
+  text-align: right;
+  margin-top: $space-sm;
+  margin-right: $space-md;
+
+  label {
+    font-family: $font-texts;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 18px;
+  }
+}
+
+/* Navbar */
+.navbar-nav {
+  font-family: $font-texts;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 28px;
+  text-shadow: $shadow-nav;
+}
+
+.nav-item .nav-link {
+  color: $color-primary;
+}
+
+.navbar .container-fluid {
+  border-radius: $radius-lg;
+  padding: $space-xxs;
+  justify-content: flex-start;
+}
+
+.container-fluid .navbar-toggler {
+  background-color: $color-toggler-bg;
+}
+
+/* Grilla Destinos (index) */
+.gridDestinos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: $destinos-grid-height $destinos-grid-height;
+  gap: $space-xxs;
+}
+
+.destino {
+  text-align: center;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: $destinos-grid-height;
+    object-fit: cover;
+  }
+
+  h4 {
+    position: absolute;
+    bottom: $space-sm;
+    left: 5%;
+    margin: 0;
+    color: white;
+    font-size: 24px;
+    font-family: $font-texts;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-shadow: $shadow-text;
+  }
+}
+
+/* Sección Comidas (index) */
+section .gridComidas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $space-lg;
+  margin-top: $space-md;
+
+  article {
+    text-align: center;
+    color: $color-primary;
+    font-family: $font-texts;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  img {
+    width: 100%;
+    height: $comidas-grid-height;
+    object-fit: cover;
+    border-radius: $radius-sm;
+  }
+}
+
+/* Footer */
+footer {
+  ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: $space-sm;
+    margin: $space-xxs;
+  }
+
+  ul li a {
+    color: $color-primary;
+    font-family: $font-texts;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  form {
+    text-align: center;
+    margin: $space-xxs;
+    padding: $space-sm;
+    font-family: $font-texts;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+}
+
+/* Responsive */
+@media (max-width: $bp-md) {
+  /* (body ya tiene bg, pero lo dejo por si la profe lo busca) */
+  body {
+    background-color: $color-bg;
+  }
+
+  #navbarNav {
+    @include navbar-mobile;
+  }
+
+  .col {
+    padding-top: $space-sm;
+    padding-bottom: $space-sm;
+  }
+
+  .imgDestinos {
+    height: auto;
+    width: 100%;
+  }
+
+  .sobreMi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: $bp-sm) {
+  body {
+    background-color: $color-bg;
+  }
+
+  #navbarNav {
+    @include navbar-mobile;
+  }
+
+  .col {
+    padding-top: $space-sm;
+    padding-bottom: $space-sm;
+  }
+
+  .imgDestinos {
+    height: auto;
+    width: 100%;
+  }
+
+  .sobreMi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

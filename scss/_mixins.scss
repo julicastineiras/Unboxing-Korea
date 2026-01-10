@@ -1,0 +1,16 @@
+@mixin navbar-mobile {
+  background: $color-white;
+  border: 1px solid $color-border-light;
+  border-radius: $radius-xl;
+  padding: $space-sm;
+  margin-top: $space-sm;
+  box-shadow: $shadow-dropdown;
+  position: relative;
+  z-index: $z-navbar;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

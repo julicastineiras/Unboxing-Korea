@@ -1,0 +1,49 @@
+/* Tipografia */
+$font-headline1: "Bangers", system-ui;
+$font-texts: "Outfit", sans-serif; // para textos y otros headlines
+
+/* Colores */
+$color-bg: #f6f6f6;
+$color-white: #ffffff;
+
+$color-primary: #002E86;
+$color-accent: #F60003;
+$color-lilac: #8c77ff;       // borde/link en botones que comer
+$color-border-light: #d3d3d3;   // color de borde claro en navbar
+$color-text-shadow-dark: rgba(0, 0, 0, 0.6);    // Sombra oscura para textos sobre imágenes
+$color-text-shadow-gray: rgba(63, 62, 62, 0.6);  // Sombra más suave
+$color-toggler-bg: rgba(255, 255, 255, 0.85);   // Fondo blanco semi-transparente para el boton hamburguesa
+
+/* Sombras */
+$shadow-text: 2px 2px 4px $color-text-shadow-dark;
+$shadow-nav: 2px 2px 4px $color-text-shadow-gray;
+$shadow-dropdown: 0 4px 12px rgba(0, 0, 0, 0.35);
+
+/* Radius */
+$radius-sm: 5px;
+$radius-md: 6px;
+$radius-lg: 8px;
+$radius-xl: 10px;
+
+/* Espaciados */
+$space-xxs: 5px;
+$space-xs: 8px;
+$space-sm: 10px;
+$space-md: 15px;
+$space-lg: 20px;
+$space-xl: 30px;
+$space-2xl: 40px;
+
+/* Tamaños */
+$header-height: 611px;
+$destinos-grid-height: 200px;
+$comidas-grid-height: 180px;
+$destinos-height: 480px;
+$about-img-size: 400px;
+
+/* Z-index */
+$z-navbar: 1050;    // Asegura que el navbar esté por encima del contenido
+
+/* Breakpoints responsive */
+$bp-md: 991px;
+$bp-sm: 430px;

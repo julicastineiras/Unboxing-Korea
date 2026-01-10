@@ -1,0 +1,13 @@
+/* Botón de la sección comidas */
+section .gridComidas button {
+  margin-top: $space-xs;
+  padding: 6px 10px;
+  background-color: $color-white;
+  border: 1px solid $color-lilac;
+  border-radius: $radius-md;
+
+  a {
+    text-decoration: none;
+    color: $color-lilac;
+  }
+}

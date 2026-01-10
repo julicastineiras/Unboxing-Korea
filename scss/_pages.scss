@@ -1,0 +1,137 @@
+/* Especificos por pagina */
+
+/* INDEX headings específicos */
+.h2Index {
+  color: $color-primary;
+  font-size: 36px;
+  font-family: $font-texts;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: $space-2xl;
+}
+
+.h3Index {
+  color: $color-accent;
+  font-size: 28px;
+  font-family: $font-texts;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: $space-lg;
+  margin-bottom: $space-lg;
+}
+
+/* DESTINOS PAGE */
+article {
+  margin: $space-lg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h3 {
+    padding: $space-xs;
+    margin-bottom: $space-sm;
+    font-family: $font-texts;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    color: $color-primary;
+    display: inline-block;
+    margin-left: $space-xs;
+  }
+
+  p {
+    padding: $space-md;
+    line-height: 1.5;
+    margin-bottom: $space-md;
+    font-family: $font-texts;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    box-sizing: border-box;
+  }
+
+  div ul li {
+    margin-bottom: $space-xs;
+    font-family: $font-texts;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+  }
+}
+
+.imgDestinos {
+  height: $destinos-height;
+  margin-bottom: $space-md;
+}
+
+.itemsDestinos {
+  list-style: none;
+  padding: $space-md;
+
+  li {
+    padding: $space-sm;
+    text-align: left;
+    font-family: $font-texts;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+  }
+}
+
+/* COMIDA PAGE */
+.comidaIzq {
+  margin: $space-lg;
+  display: flex;
+  align-items: center;
+}
+
+.descripcionComida {
+  display: flex;
+  gap: $space-lg;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1500px;
+}
+
+.comidaDer {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CONSEJOS PAGE */
+.consejosEmoji {
+  vertical-align: middle;
+}
+
+/* SOBRE MI PAGE */
+.sobreMi {
+  display: flex;
+  align-items: flex-start;
+  gap: $space-xl;
+  max-width: 1500px;
+  margin-top: $space-lg;
+  margin-left: $space-xl;
+  margin-right: $space-xl;
+
+  img {
+    width: $about-img-size;
+    height: $about-img-size;
+    object-fit: cover;
+  }
+
+  p {
+    line-height: 1.6;
+    font-size: 24px;
+    font-family: $font-texts;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+}
