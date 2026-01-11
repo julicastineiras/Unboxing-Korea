@@ -52,7 +52,7 @@ h2 {
 /* Estructura: header/nav/grids/footer y responsive */
 /* Header */
 header {
-  background-image: url("../assets/seoul-namsan-night-wide.png");
+  background-image: url("../assets/HeadImg.png");
   background-size: cover;
   background-position: center;
   height: 611px;
@@ -190,64 +190,6 @@ footer form {
   font-style: normal;
 }
 
-/* Responsive */
-@media (max-width: 991px) {
-  /* (body ya tiene bg, pero lo dejo por si la profe lo busca) */
-  body {
-    background-color: #f6f6f6;
-  }
-  #navbarNav {
-    background: #ffffff;
-    border: 1px solid #d3d3d3;
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
-    position: relative;
-    z-index: 1050;
-  }
-  .col {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .imgDestinos {
-    height: auto;
-    width: 100%;
-  }
-  .sobreMi {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media (max-width: 430px) {
-  body {
-    background-color: #f6f6f6;
-  }
-  #navbarNav {
-    background: #ffffff;
-    border: 1px solid #d3d3d3;
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
-    position: relative;
-    z-index: 1050;
-  }
-  .col {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .imgDestinos {
-    height: auto;
-    width: 100%;
-  }
-  .sobreMi {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
 /* Botón de la sección comidas */
 section .gridComidas button {
   margin-top: 8px;
@@ -261,8 +203,12 @@ section .gridComidas button a {
   color: #8c77ff;
 }
 
-/* Especificos por pagina */
-/* INDEX headings específicos */
+/* INDEX*/
+.btn {
+  background-color: #002E86;
+  color: #ffffff;
+}
+
 .h2Index {
   color: #002E86;
   font-size: 36px;
@@ -283,6 +229,17 @@ section .gridComidas button a {
   font-style: normal;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.h2footer {
+  color: #F60003;
+  font-size: 36px;
+  font-family: "Bangers", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: 40px;
 }
 
 /* DESTINOS PAGE */
@@ -325,7 +282,6 @@ article div ul li {
 }
 
 .imgDestinos {
-  height: 480px;
   margin-bottom: 15px;
 }
 
@@ -390,6 +346,79 @@ article div ul li {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  body {
+    background-color: #f6f6f6;
+  }
+  #navbarNav {
+    background: #ffffff;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    position: relative;
+    z-index: 1050;
+  }
+  .col {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .imgDestinos {
+    width: 100%;
+  }
+  .descripcionComida {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .descripcionComida img {
+    order: 0; /* aparece antes del párrafo */
+    width: 100%;
+    height: auto;
+    max-width: 480px;
+  }
+  .descrComida {
+    order: 1;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .sobreMi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 430px) {
+  body {
+    background-color: #f6f6f6;
+  }
+  #navbarNav {
+    background: #ffffff;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    position: relative;
+    z-index: 1050;
+  }
+  .col {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .imgDestinos {
+    height: auto;
+    width: 100%;
+  }
+  .sobreMi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

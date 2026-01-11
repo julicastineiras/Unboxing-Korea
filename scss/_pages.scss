@@ -1,6 +1,9 @@
-/* Especificos por pagina */
+/* INDEX*/
+.btn {
+  background-color: $color-primary;
+  color: $color-white
+}
 
-/* INDEX headings específicos */
 .h2Index {
   color: $color-primary;
   font-size: 36px;
@@ -21,6 +24,17 @@
   font-style: normal;
   margin-top: $space-lg;
   margin-bottom: $space-lg;
+}
+
+.h2footer {
+    color: $color-accent;
+  font-size: 36px;
+  font-family: $font-headline1;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: $space-2xl;
 }
 
 /* DESTINOS PAGE */
@@ -66,7 +80,7 @@ article {
 }
 
 .imgDestinos {
-  height: $destinos-height;
+
   margin-bottom: $space-md;
 }
 
@@ -133,5 +147,79 @@ article {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+  }
+}
+
+/* Responsive */
+@media (max-width: $bp-md) {
+
+  body {
+    background-color: $color-bg;
+  }
+
+  #navbarNav {
+    @include navbar-mobile;
+  }
+
+  .col {
+    padding-top: $space-sm;
+    padding-bottom: $space-sm;
+  }
+
+  .imgDestinos {
+    width: 100%;
+  }
+
+  .descripcionComida {
+    flex-direction: column;
+    align-items: center;
+    gap: $space-md;
+  }
+
+  .descripcionComida img {
+    order: 0; /* aparece antes del párrafo */
+    width: 100%;
+    height: auto;
+    max-width: 480px;
+  }
+
+  .descrComida {
+    order: 1;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  
+
+  .sobreMi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: $bp-sm) {
+  body {
+    background-color: $color-bg;
+  }
+
+  #navbarNav {
+    @include navbar-mobile;
+  }
+
+  .col {
+    padding-top: $space-sm;
+    padding-bottom: $space-sm;
+  }
+
+  .imgDestinos {
+    height: auto;
+    width: 100%;
+  }
+
+  .sobreMi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

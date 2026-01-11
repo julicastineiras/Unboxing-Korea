@@ -2,7 +2,7 @@
 
 /* Header */
 header {
-  background-image: url("../assets/seoul-namsan-night-wide.png");
+  background-image: url("../assets/HeadImg.png");
   background-size: cover;
   background-position: center;
   height: $header-height;
@@ -147,56 +147,3 @@ footer {
   }
 }
 
-/* Responsive */
-@media (max-width: $bp-md) {
-  /* (body ya tiene bg, pero lo dejo por si la profe lo busca) */
-  body {
-    background-color: $color-bg;
-  }
-
-  #navbarNav {
-    @include navbar-mobile;
-  }
-
-  .col {
-    padding-top: $space-sm;
-    padding-bottom: $space-sm;
-  }
-
-  .imgDestinos {
-    height: auto;
-    width: 100%;
-  }
-
-  .sobreMi {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (max-width: $bp-sm) {
-  body {
-    background-color: $color-bg;
-  }
-
-  #navbarNav {
-    @include navbar-mobile;
-  }
-
-  .col {
-    padding-top: $space-sm;
-    padding-bottom: $space-sm;
-  }
-
-  .imgDestinos {
-    height: auto;
-    width: 100%;
-  }
-
-  .sobreMi {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
