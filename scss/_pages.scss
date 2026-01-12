@@ -166,6 +166,12 @@ article {
     padding-bottom: $space-sm;
   }
 
+   .gridDestinos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, $destinos-grid-height);
+    gap: $space-sm;
+  }
+
   .imgDestinos {
     width: 100%;
   }
@@ -189,8 +195,6 @@ article {
     box-sizing: border-box;
   }
 
-  
-
   .sobreMi {
     display: flex;
     flex-direction: column;
@@ -210,6 +214,12 @@ article {
   .col {
     padding-top: $space-sm;
     padding-bottom: $space-sm;
+  }
+
+  .gridDestinos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, $destinos-grid-height);
+    gap: $space-sm;
   }
 
   .imgDestinos {

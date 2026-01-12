@@ -11,3 +11,82 @@ section .gridComidas button {
     color: $color-lilac;
   }
 }
+
+/* FLIP CARDS - Destinos (Index) */
+
+.flip {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: $destinos-grid-height;
+  border-radius: $radius-xl;
+  overflow: hidden;
+  perspective: 1000px;
+  text-decoration: none;
+  cursor: pointer;
+
+  > .front,
+  > .back {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    padding: $space-md;
+    border-radius: $radius-xl;
+
+    transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+    transition-duration: .5s;
+    transition-property: transform, opacity;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  > .front {
+    background-size: cover !important;
+    background-position: center !important;
+    justify-content: flex-end;
+    transform: rotateY(0deg);
+  }
+
+  > .back {
+  background: $color-white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: $space-xs;
+  opacity: 0;
+  transform: rotateY(-180deg);
+}
+
+  &:hover {
+    > .front {
+      transform: rotateY(180deg);
+    }
+
+    > .back {
+      opacity: 1;
+      transform: rotateY(0deg);
+    }
+  }
+}
+
+/* Estilo del front sobre la imagen */
+.flipTitle {
+  margin: 0;
+  color: $color-white;
+  font-size: 24px;
+  font-family: $font-texts;
+  font-weight: 600;
+  text-shadow: $shadow-text;
+}
+
+/* Estilo del back con la descripción */
+.flip .back p {
+  margin: 0;
+  font-family: $font-texts;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.6;
+  color: #555;
+}

@@ -66,31 +66,6 @@ header {
   gap: $space-xxs;
 }
 
-.destino {
-  text-align: center;
-  position: relative;
-
-  img {
-    width: 100%;
-    height: $destinos-grid-height;
-    object-fit: cover;
-  }
-
-  h4 {
-    position: absolute;
-    bottom: $space-sm;
-    left: 5%;
-    margin: 0;
-    color: white;
-    font-size: 24px;
-    font-family: $font-texts;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    text-shadow: $shadow-text;
-  }
-}
-
 /* Sección Comidas (index) */
 section .gridComidas {
   display: grid;

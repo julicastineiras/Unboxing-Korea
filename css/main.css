@@ -117,29 +117,6 @@ header {
   gap: 5px;
 }
 
-.destino {
-  text-align: center;
-  position: relative;
-}
-.destino img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-.destino h4 {
-  position: absolute;
-  bottom: 10px;
-  left: 5%;
-  margin: 0;
-  color: white;
-  font-size: 24px;
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
 /* Sección Comidas (index) */
 section .gridComidas {
   display: grid;
@@ -201,6 +178,75 @@ section .gridComidas button {
 section .gridComidas button a {
   text-decoration: none;
   color: #8c77ff;
+}
+
+/* FLIP CARDS - Destinos (Index) */
+.flip {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  perspective: 1000px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.flip > .front,
+.flip > .back {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 10px;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 0.5s;
+  transition-property: transform, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flip > .front {
+  background-size: cover !important;
+  background-position: center !important;
+  justify-content: flex-end;
+  transform: rotateY(0deg);
+}
+.flip > .back {
+  background: #ffffff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  opacity: 0;
+  transform: rotateY(-180deg);
+}
+.flip:hover > .front {
+  transform: rotateY(180deg);
+}
+.flip:hover > .back {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+/* Estilo del front sobre la imagen */
+.flipTitle {
+  margin: 0;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilo del back con la descripción */
+.flip .back p {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.6;
+  color: #555;
 }
 
 /* INDEX*/
@@ -367,6 +413,11 @@ article div ul li {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  .gridDestinos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 200px);
+    gap: 10px;
+  }
   .imgDestinos {
     width: 100%;
   }
@@ -409,6 +460,11 @@ article div ul li {
   .col {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .gridDestinos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 200px);
+    gap: 10px;
   }
   .imgDestinos {
     height: auto;
