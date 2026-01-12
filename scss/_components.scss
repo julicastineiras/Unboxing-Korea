@@ -43,8 +43,8 @@ section .gridComidas button {
   }
 
   > .front {
-    background-size: cover !important;
-    background-position: center !important;
+    background-size: cover;
+    background-position: center;
     justify-content: flex-end;
     transform: rotateY(0deg);
   }
