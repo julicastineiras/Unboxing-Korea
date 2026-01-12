@@ -94,9 +94,9 @@ section .gridComidas button {
 @media (max-width: $bp-md), (hover: none), (pointer: coarse) {
   .flip {
     perspective: none;
+    height: $destinos-grid-height;
   }
 
-  /* anulamos completamente la animación */
   .flip > .front,
   .flip > .back {
     transition: none;
@@ -108,9 +108,9 @@ section .gridComidas button {
     display: none;
   }
 
-  /* dejamos el front visible y normal */
   .flip > .front {
-    position: relative;
+    position: absolute; 
+    inset: 0;
     opacity: 1;
   }
 }
