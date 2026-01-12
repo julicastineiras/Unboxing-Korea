@@ -229,29 +229,6 @@ section .gridComidas button a {
   transform: rotateY(0deg);
 }
 
-/* ============================
-   Disable flip on touch devices / small screens
-   (no hover, tap should navigate)
-   ============================ */
-@media (max-width: 991px), (hover: none), (pointer: coarse) {
-  .flip {
-    perspective: none;
-  }
-  .flip > .front,
-  .flip > .back {
-    transition: none;
-    transform: none !important;
-  }
-  /* Mostrar solo el front */
-  .flip > .back {
-    display: none;
-    opacity: 0 !important;
-  }
-  .flip > .front {
-    opacity: 1 !important;
-    position: relative; /* ya no necesita estar “encima” */
-  }
-}
 /* Estilo del front sobre la imagen */
 .flipTitle {
   margin: 0;
@@ -272,6 +249,26 @@ section .gridComidas button a {
   color: #555;
 }
 
+@media (max-width: 991px), (hover: none), (pointer: coarse) {
+  .flip {
+    perspective: none;
+  }
+  /* anulamos completamente la animación */
+  .flip > .front,
+  .flip > .back {
+    transition: none;
+    transform: none;
+  }
+  /* ocultamos el back */
+  .flip > .back {
+    display: none;
+  }
+  /* dejamos el front visible y normal */
+  .flip > .front {
+    position: relative;
+    opacity: 1;
+  }
+}
 /* INDEX*/
 .btn {
   background-color: #002E86;
